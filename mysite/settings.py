@@ -20,14 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-import os
-
-SECRET_KEY = os.getenv('SECRET')
+SECRET_KEY = 'django-insecure-3!^oxq_veofewr0(g+t(_%g21l34-onpi$39r*xa59za6808*8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', os.getenv('trail_plum_caterpillar') + ".glitch.me"]
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 
 # Application definition
@@ -125,3 +123,4 @@ STATIC_ROOT = BASE_DIR / 'static'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
